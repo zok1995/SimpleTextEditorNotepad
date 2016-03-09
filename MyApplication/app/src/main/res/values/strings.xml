@@ -3,4 +3,23 @@
     <string name="save">Save</string>
     <string name="open">Open</string>
     <string name="Settings">Settings</string>
+    <string name="font_settings">Font Settings</string>
+    <string name="size">Size</string>
+    <string name="setted_font_size">Setted font size</string>
+    <string name="font_size">Font Size</string>
+    <string name="preference_style">PrefStyle</string>
+    <string name="font_style">Font style</string>
+    <string name="setted_font_style">Setted font style</string>
+    <string name="preference_color">PrefColor</string>
+    <string name="text_color">Text color</string>
+    <string name="setted_text_color">Setted text color</string>
+    <string name="preference_color_black">PrefColorBlack</string>
+    <string name="black">Black</string>
+    <string name="setted_black_color">Setted black color</string>
+    <string name="preference_color_red">PrefColorRed</string>
+    <string name="red">Red</string>
+    <string name="setted_red_color">Setted red color</string>
+    <string name="preference_color_green">PrefColorGreen</string>
+    <string name="green">Green</string>
+    <string name="setted_green_color">Setted green color</string>
 </resources>

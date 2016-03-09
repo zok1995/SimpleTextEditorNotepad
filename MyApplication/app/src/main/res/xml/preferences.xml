@@ -1,4 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Working with fronts ">
+        <CheckBoxPreference
+            android:key="OpenPreferences"
+            android:summary="Open file with starting application"
+            android:title="Open"
+            android:enabled="false"/>
+    </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/font_settings">
+        <EditTextPreference
+            android:defaultValue="14"
+            android:dialogTitle="Enter font size (10 to 30)"
+            android:key="@string/size"
+            android:summary="@string/setted_font_size"
+            android:title="@string/font_size"/>
+        <ListPreference
+            android:key="@string/preference_style"
+            android:title="@string/font_style"
+            android:summary="@string/setted_font_style"
+            android:defaultValue="1"
+            android:entries="@array/text_style"
+            android:entryValues="@array/text_style"
+            android:dialogTitle="Select font style"/>
+        <PreferenceScreen
+            android:key="@string/preference_color"
+            android:title="@string/text_color"
+            android:summary="@string/setted_text_color">
+
+            <CheckBoxPreference
+                android:key="@string/preference_color_black"
+                android:title="@string/black"
+                android:defaultValue="true"
+                    android:summary="@string/setted_black_color"/>
+            <CheckBoxPreference
+                android:key="@string/preference_color_red"
+                android:title="@string/red"
+                android:defaultValue="true"
+                android:summary="@string/setted_red_color"/>
+            <CheckBoxPreference
+                android:key="@string/preference_color_green"
+                android:title="@string/green"
+                android:summary="@string/setted_green_color"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
 </PreferenceScreen>
