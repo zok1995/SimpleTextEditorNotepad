@@ -33,12 +33,14 @@
             <CheckBoxPreference
                 android:key="@string/preference_color_black"
                 android:title="@string/black"
-                android:defaultValue="true"
-                    android:summary="@string/setted_black_color"/>
+                android:summary="@string/setted_black_color"/>
+            <CheckBoxPreference
+                android:key="@string/preference_color_white"
+                android:title="@string/white"
+                android:summary="@string/setted_white_color" />
             <CheckBoxPreference
                 android:key="@string/preference_color_red"
                 android:title="@string/red"
-                android:defaultValue="true"
                 android:summary="@string/setted_red_color"/>
             <CheckBoxPreference
                 android:key="@string/preference_color_green"

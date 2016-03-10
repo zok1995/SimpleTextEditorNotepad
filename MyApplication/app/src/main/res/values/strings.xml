@@ -22,4 +22,7 @@
     <string name="preference_color_green">PrefColorGreen</string>
     <string name="green">Green</string>
     <string name="setted_green_color">Setted green color</string>
+    <string name="preference_color_white">PrefColorWhite</string>
+    <string name="white">White</string>
+    <string name="setted_white_color">Setted white color</string>
 </resources>
