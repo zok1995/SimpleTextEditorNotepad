@@ -2,6 +2,8 @@ package com.example.oleksandr.texteditornotepad;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,6 +20,14 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mEditTextMainField = (EditText) findViewById(R.id.editText);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        float fSize = Float.parseFloat(sharedPreferences.getString("Size", "20"));
+        mEditTextMainField.setTextSize(fSize);
     }
 
     @Override
